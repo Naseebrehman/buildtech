@@ -1,0 +1,182 @@
+*{
+    font-family: montserrat;
+}
+body{
+    overflow-x: hidden;
+}
+.section-padding{
+    padding: 70px 0;
+    background-color: #000000e5;
+}
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+.carousel-caption {
+    bottom: 220px;
+    z-index: 2;
+}
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.719);
+    z-index: 1;
+}
+.navbar-nav a{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.9;
+}
+.navbar-light .navbar-brand{
+    color: #000;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover{
+    color: #000;
+}
+.navbar-light .navbar-nav .navbar-link{
+    color: #000;
+}
+.w-100{
+    height: 100vh;
+}
+.service .card-body i{
+    font-size: 50px;
+}
+ .service .card-body {
+    box-shadow: 15px 15px 40px rgba(94, 90, 90, 0.658);
+} 
+.project .card{
+    box-shadow: 15px 15px 40px rgba(94, 90, 90, 0.658);
+}
+.icon-address i{
+    padding: 5px;
+    font-size: x-large;
+}
+.icon-address i:hover{
+    transition-delay: 0.7s;
+    color:rgb(255, 187, 0) !important ;
+}
+/* sticky icons */
+.sticky-icon  {
+	z-index:10;
+	position:fixed;
+	top:10%;
+	right:0%;
+	width: 100px;
+	display:flex;
+	flex-direction:column;}  
+.sticky-icon a  {
+	transform:translate(50px,0px);
+	margin:2px;
+	text-decoration:none;
+	text-transform:uppercase;
+	padding:10px;
+	transition:all 0.7s;}
+.sticky-icon a:hover  {
+	transform:translate(0px,0px);
+    transition-delay: 0.5s;
+    color: rgb(255, 187, 0);
+}	
+
+.sticky-icon a i.bi-telephone  {
+	background-color:transparent;
+    font-size: 35px;
+}
+.sticky-icon a i.bi-whatsapp  {
+	background-color:transparent;
+    font-size: 35px;
+}
+.sticky-icon a i.bi-download{
+    font-size: 35px;
+}
+
+ 
+/* onload function css */
+#center img {
+    border-radius: 50%;
+    margin-top: 160px;
+}
+
+.rotate {
+animation: rotation 2s infinite linear;
+animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes rotation {
+from {
+transform: rotate(0deg);
+}
+to {
+transform: rotate(359deg);
+}
+}
+#center{
+text-align: center;
+background-color: black;
+height: 100vh;
+position: fixed;
+width: 100%;
+z-index: 100;
+}
+#center h2{
+color: wheat;
+padding-top: 30px;
+}
+
+
+ /*Responsive */
+ @media only screen and (max-width: 767px){
+    .navbar-nav{
+        text-align: center;
+    }
+    .carousel-caption{
+        bottom: 125px;
+    }
+    .carousel-caption h5{
+        font-size: 17px;
+    }
+    .carousel-caption a{
+        padding: 10px 15px;
+    }
+    .carousel-caption p{
+        width: 100%;
+        line-height: 1.6;
+        font-size: 12px;
+    }
+    .card{
+        margin-bottom: 30px !important ;
+    }
+    .about-text{
+        padding-top: 50px;
+    }
+ }
+ /* video */
+ .about-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+ }
+
